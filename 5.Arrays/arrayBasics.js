@@ -47,3 +47,8 @@ const nums = [2, 43, 10, 65, 3]
 // sorts strings by default, weird because it doesn't sort numerically
 nums.sort((a,b) => a - b)
 console.log(nums)
+
+// Standard to use arrays with const. You can modify the array.
+// Because an array is a reference type, you can still modify its internals
+// You just can't declare it to a new array.
+const arrConst = [];
