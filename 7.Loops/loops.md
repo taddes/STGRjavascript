@@ -71,8 +71,9 @@ for (variable in object) {
 
 Because arrays are technically objects still in JS, you can use for in on an array
 * Index value of array will be the returned variable, then you can call the property of that array using the index: `value[k]`
+* Usage like this is not recommended.
 ```javascript
 for (let k in [89, 34, 45, 57]) {
-  console.log(k)
+  console.log(k);
 }
 ```
