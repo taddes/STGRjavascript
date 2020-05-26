@@ -28,7 +28,7 @@ function outer() {
   inner()
 }
 ```
-### Function Statements
+### Function Declarations/Statements
 * Where a function is defined with a keyword and its return statement is often assigned to a variable. **Name of function follows `function` keyword**
 ```javascript
 function square (num) {
@@ -117,5 +117,8 @@ setTimeout(() => {
 }, 3000);
 ```
 
-
 ### Hoisting
+* ES6 variable declarations of `let` and `const` do not allow hoisting like `var`. 
+* Functions assigned to a variable, or function expressions, do not hoist.  The variable is set, but it's value set to undefined at execution, just like any variable. `cannot access 'varname' before initialization`.
+* Function statements/declarations do hoist, however and you can access call them before defined.
+* Regardless, it is best not to depend on hoisting when writing code.
