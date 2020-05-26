@@ -95,5 +95,27 @@ product(2,3)
     ```
 
 ### Callbacks
+* Functions that are passed into another function as an argument, which is then invoked inside the outer function.
+```javascript
+// Example
+function callTwice(func) {
+  func();
+  func();
+}
+
+function say() {
+  console.log(`Hello There`)
+}
+
+callTwice(say);
+```
+* Common for requests that take time and require another resource to do something.
+* Most common to pass in an anonomyous function as a callback. If you don't need to reuse the function, this is the easiest way.
+```javascript
+setTimeout(() => {
+  alert('WELCOME!')
+}, 3000);
+```
+
 
 ### Hoisting
