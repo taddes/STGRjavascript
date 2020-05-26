@@ -71,7 +71,28 @@ product(2,3)
 
     callTwice(say);
     ```
+
     * Return another function or functions as return values
+        * Good to think of as 'factories', in that they make new versions of a function and tweak it.
+        * By passing in an outer argument, you adjust how the function behaves, as it will accept the inner arguments when called.
+        * Factory function
+        * Returns a pattern of logic for reuse.
+    ```javascript
+    function multiplyBy(num) {
+      return function(x) {
+        return x * num;
+      }
+    }
+    
+    const triple = multiplyBy(3);
+    triple(5) // 15
+
+    const double = multiplyBy(2);
+    double(5) // 10
+    
+    const halve = multiplyBy(0.5)/
+    halve(10) // 5
+    ```
 
 ### Callbacks
 
