@@ -56,6 +56,23 @@ product(2,3)
 ```
 
 ### Higher Order Functions
-* Functions are objects in JavaScript, so they can be assigned to variables, stored in arrays, values in objects, etc.
+* Functions are objects in JavaScript, so they can be assigned to variables, stored in arrays, values in objects, etc. Therefore, they are 'higher order functions'
+* Higher Order Functions are Functions that operate on/with other functions. They can:
+    * Accept other functions as arguments
+    ```javascript
+    function callTwice(func) {
+      func();
+      func();
+    }
 
-### Functions as arguments
+    function say() {
+      console.log(`Hello There`)
+    }
+
+    callTwice(say);
+    ```
+    * Return another function or functions as return values
+
+### Callbacks
+
+### Hoisting
