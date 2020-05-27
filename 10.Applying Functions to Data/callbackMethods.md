@@ -67,7 +67,16 @@ let movie = movies.find(movie => {
 }); 
 // Mrs. Doubtfire
 ```
+
+### Filter
+* Creates a new array with all the elements that pass a test implemented by a provided function.
+* The passed in callback function returns values that evaluate to true. If a value returns true, it is added to the new returned array.
 ```javascript
+const nums = [9, 8, 7, 6, 5, 4, 3, 2, 1];
+const odds = nums.filter(n => {
+  return n % 2 === 1;
+});
+// [9, 7, 5, 3, 1]
 ```
 ```javascript
 ```
