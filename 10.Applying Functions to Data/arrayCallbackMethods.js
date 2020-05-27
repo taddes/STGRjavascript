@@ -123,5 +123,14 @@ const books = [
   },
 ];
 
-const oldBooks = books.filter(b => b < 1950)
+const oldBooks = books.filter(b => {
+  return b.publicationDate < 1950
+})
 console.log(oldBooks)
+console.log()
+
+const politicalBooks = books.filter(b => {
+  return b.genres.includes('political')
+});
+console.log('POLITICAL')
+console.log(politicalBooks);
