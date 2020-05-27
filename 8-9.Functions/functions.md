@@ -139,3 +139,22 @@ const numDetail = nums.map((n) => {
   }
 });
 ```
+* A single parameter defined for the function lets you leave out the parenthesis after equals sign.
+* **Implicit Returns to Arrow Functions**:
+    * A simple arrow function that returns a simple, single expression, `return` can be left out. You have to wrap the expression with parenthesis.
+    * You can only return one thing with an implicit return, must be a simple expression. 
+    ```javascript
+    const square = n => (n * n);
+    const isEven = num => num % 2 === 0;
+
+    // One shorthand
+    const parityList = nums.map((n) => {
+      if (n % 2 === 0) return 'even';
+      return 'odd'
+    });
+
+    // Same as above, using ternary exp
+    const parityList = nums.map((n) => {
+      n % 1 === 0 ? 'even' : 'odd'
+    });
+    ```

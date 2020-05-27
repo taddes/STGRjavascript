@@ -41,4 +41,10 @@ const numDetail = numbers.map(function(n) {
 
 console.table(numDetail)
 console.dir(numDetail)
+console.log()
 
+// Arrow function examples
+const parityList = nums.map((n) => {
+  if (n % 2 === 0) return 'even';
+  return 'odd'
+});
