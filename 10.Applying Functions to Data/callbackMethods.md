@@ -78,5 +78,6 @@ const odds = nums.filter(n => {
 });
 // [9, 7, 5, 3, 1]
 ```
+
 ```javascript
 ```

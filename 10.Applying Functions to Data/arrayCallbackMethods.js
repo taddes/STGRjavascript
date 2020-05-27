@@ -71,3 +71,57 @@ console.log(movie2);
 
 console.log()
 console.log('FILTER')
+
+const books = [
+  {
+    title: '1984',
+    author: 'George Orwell',
+    publicationDate: 1946,
+    genres: ['fiction', 'political', 'literature', 'dystopian']
+  },
+  {
+    title: 'Who Owns The Future?',
+    author: 'Jaron Lanier',
+    publicationDate: 2012,
+    genres: ['non-fiction', 'technology']
+  },
+  {
+    title: 'Dawn of the New Everything',
+    author: 'Jaron Lanier',
+    publicationDate: 2018,
+    genres: ['non-fiction', 'technology']
+  },
+  {
+    title: 'The Moon is Down',
+    author: 'John Steinbeck',
+    publicationDate: 1942,
+    genres: ['fiction', 'literature', 'ww2']
+  },
+  {
+    title: 'Brave New World',
+    author: 'Aldous Huxley,',
+    publicationDate: 1932,
+    genres: ['fiction', 'literature', 'dystopian']
+  },
+  {
+    title: 'The Road to Unfreedom',
+    author: 'Timothy Snyder',
+    publicationDate: 2018,
+    genres: ['non-fiction', 'political']
+  },
+  {
+    title: 'Bloodlands',
+    author: 'Timothy Snyder',
+    publicationDate: 2014,
+    genres: ['non-fiction', 'political', 'ww2']
+  },
+  {
+    title: 'The Age of Surveilance Capitalism',
+    author: 'Zoshanna Zuboff',
+    publicationDate: 2019,
+    genres: ['non-fiction', 'political', 'dystopian']
+  },
+];
+
+const oldBooks = books.filter(b => b < 1950)
+console.log(oldBooks)
