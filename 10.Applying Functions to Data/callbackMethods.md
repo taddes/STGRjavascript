@@ -39,7 +39,16 @@ console.table(numDetail)
 ```
 
 ### Use of Arrow Functions
+* Syntactically compact syntax for defining function expressions.
 ```javascript
+const nums = [9, 8, 7, 6, 5, 4, 3, 2, 1];
+
+const numDetail = nums.map((n) => {
+  return {
+    value: n,
+    isEven: n % 2 === 0
+  }
+});
 ```
 
 ```javascript
