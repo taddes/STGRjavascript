@@ -51,5 +51,23 @@ const numDetail = nums.map((n) => {
 });
 ```
 
+### Find
+* Returns the value of the **first element** in the array that satisfies the provided testing function.
+* Stops after the first value is found.
+```javascript
+let movies = [
+  'The Fantastic Mr. Fox',
+  'Mr and Mrs Smith',
+  'Mrs. Doubtfire',
+  'Mr. Deeds'
+];
+
+let movie = movies.find(movie => {
+  return movie.includes('Doubt')
+}); 
+// Mrs. Doubtfire
+```
+```javascript
+```
 ```javascript
 ```

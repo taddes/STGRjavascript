@@ -44,7 +44,22 @@ console.dir(numDetail)
 console.log()
 
 // Arrow function examples
+console.log('Arrow func')
 const parityList = nums.map((n) => {
   if (n % 2 === 0) return 'even';
   return 'odd'
 });
+
+console.log()
+console.log('FIND')
+let movies = [
+  'The Fantastic Mr. Fox',
+  'Mr and Mrs Smith',
+  'Mrs. Doubtfire',
+  'Mr. Deeds'
+];
+
+let movie = movies.find(movie => {
+  return movie.includes('Doubt')
+});
+console.log(movie)
