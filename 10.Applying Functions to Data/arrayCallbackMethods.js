@@ -129,8 +129,10 @@ const oldBooks = books.filter(b => {
 console.log(oldBooks)
 console.log()
 
-const politicalBooks = books.filter(b => {
-  return b.genres.includes('political')
-});
+// Implicit return example with ()
+const politicalBooks = books.filter(b => (
+   b.genres.includes('political') ||
+   b.genres.includes('dystopian') 
+));
 console.log('POLITICAL')
 console.log(politicalBooks);
