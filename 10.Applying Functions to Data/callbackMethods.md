@@ -162,6 +162,7 @@ const descBooks = books.slice().sort((a, b) => b.publicationDate - a.publication
 * Executes a reducer function on each element of the array, **resulting in a single value**.
 * Multiple elements in an array reduced into a single element at the end. Like summing, or an accumulator, a maximum value.
 * First parameter is `previousValue`, which is the accumulator, which is referenced as the iteration proceeds. `CurrentValue` is the value directly following it.
+* Optional third parameter is the initial accumulator/first value. Otherwise, the first value of the array is used as the `previousValue` argument.
 ```javascript
 reduce(callback(previousValue, CurrentValue) => {
   return
@@ -178,4 +179,25 @@ second        8             7             15
 third         15            9             24
 fourth        24            11            35
 */
+```
+
+**Useful tallying example, for creating a hash table**
+```javascript
+const votes = ['y', 'y', 'n', 'y', 'y', 'y', 'n', 'n', 'n', 'y'];
+const results = votes.reduce((tally, val ) => {
+  if(tally[val]) {
+    tally[val]++;
+  } else {
+    tally[val] = 1;
+  }
+    return tally;
+  }, {})
+
+console.log({results})
+// { results: { y: 6, n: 4 } }
+
+const results_short = votes.reduce((tally, val) => {
+  tally[val] = (tally[val] || 0) + 1;
+  return tally;
+}, {})
 ```
