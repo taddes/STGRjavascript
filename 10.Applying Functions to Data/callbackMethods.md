@@ -161,7 +161,12 @@ const descBooks = books.slice().sort((a, b) => b.publicationDate - a.publication
 ### Reduce
 * Executes a reducer function on each element of the array, **resulting in a single value**.
 * Multiple elements in an array reduced into a single element at the end. Like summing, or an accumulator, a maximum value.
-
+* First parameter is `previousValue`, which is the accumulator, which is referenced as the iteration proceeds. `CurrentValue` is the value directly following it.
+```javascript
+reduce(callback(previousValue, CurrentValue) => {
+  return
+})
+```
 ```javascript
 [3, 5, 7, 9, 11].reduce((accumulator, currentValue) => {
   return accumulator + currentValue
