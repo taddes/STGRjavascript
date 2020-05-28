@@ -116,4 +116,46 @@ const prices = [400.50, 3000, 99.99, 12.00, 9500, 35.95];
 prices.sort((a, b) => a - b)
 // Descending
 prices.sort((a, b) => b - a)
+
+const books = [
+  {
+    title: 'The Moon is Down',
+    author: 'John Steinbeck',
+    publicationDate: 1942,
+    genres: ['fiction', 'literature', 'ww2']
+  },
+  {
+    title: 'The Age of Surveilance Capitalism',
+    author: 'Zoshanna Zuboff',
+    publicationDate: 2019,
+    genres: ['non-fiction', 'political', 'dystopian']
+  },
+  {
+    title: 'Brave New World',
+    author: 'Aldous Huxley,',
+    publicationDate: 1932,
+    genres: ['fiction', 'literature', 'dystopian']
+  }
+];
+
+const descBooks = books.slice().sort((a, b) => b.publicationDate - a.publicationDate)
+[
+  {
+    title: 'The Age of Surveilance Capitalism',
+    author: 'Zoshanna Zuboff',
+    publicationDate: 2019,
+    genres: ['non-fiction', 'political', 'dystopian']
+  },
+  { title: 'The Moon is Down',
+    author: 'John Steinbeck',
+    publicationDate: 1942,
+    genres: [ 'fiction', 'literature', 'ww2' ] },
+  { title: 'Brave New World',
+    author: 'Aldous Huxley,',
+    publicationDate: 1932,
+    genres: [ 'fiction', 'literature', 'dystopian' ] 
+    } 
+  ]
 ```
+
+### Reduce

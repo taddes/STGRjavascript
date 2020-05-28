@@ -146,6 +146,13 @@ const results = books.filter(book => {
 console.log('Filter on word title')
 console.table(results)
 
+// Sort for books
+console.log()
+console.log('BOOKS SORT')
+
+const descBooks = books.slice().sort((a, b) => b.publicationDate - a.publicationDate)
+console.log(descBooks)
+
 // Every and Some
 console.log()
 console.log('EVERY AND SOME')
@@ -168,3 +175,4 @@ const isLetterG = wrd.every(word => {
 });
 console.log({all3Lets})
 console.log({isLetterG})
+
