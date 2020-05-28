@@ -10,3 +10,5 @@ function mult(x, y = 1) {
 }
 mult(5) // 5
 ```
+### Spread 
+* Allows an iterable such as an array to be **expanded** in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected
