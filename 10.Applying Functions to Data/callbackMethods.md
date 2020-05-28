@@ -99,6 +99,7 @@ const isLetterG = words.some(word => {
 
 * Default sort in JS is to convert all values to strings and sort them based on that.
 * Passing in a *compare function* is what allows you to sort integers and other data types, not just based on strings.
+* Think of compare function performing its operation on 2 elements at a time.
 ```javascript
 arr.sort(compareFunc(a, b))
 ```
@@ -108,3 +109,11 @@ arr.sort(compareFunc(a, b))
     * Leave a and b unchanged with respect to each other
 * If `compareFunc(a, b)` returns greater than 0
     * Sort b before a
+
+```javascript
+const prices = [400.50, 3000, 99.99, 12.00, 9500, 35.95];
+// Ascending
+prices.sort((a, b) => a - b)
+// Descending
+prices.sort((a, b) => b - a)
+```
