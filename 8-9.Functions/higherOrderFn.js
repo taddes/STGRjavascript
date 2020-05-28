@@ -21,5 +21,5 @@ function makeBetweenFunction(x, y) {
 const isMinor = makeBetweenFunction(0, 18);
 console.log(isMinor(18));
 
-const isSenior= makeBetweenFunction(65, 150);
+const isSenior = makeBetweenFunction(65, 150);
 console.log(isSenior(64))
