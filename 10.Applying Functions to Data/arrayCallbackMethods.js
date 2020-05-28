@@ -136,3 +136,35 @@ const politicalBooks = books.filter(b => (
 ));
 console.log('POLITICAL')
 console.log(politicalBooks);
+
+// Another example
+const query = 'The';
+const results = books.filter(book => {
+  const title = book.title.toLowerCase();
+  return title.includes(query.toLowerCase())
+})
+console.log('Filter on word title')
+console.table(results)
+
+// Every and Some
+console.log()
+console.log('EVERY AND SOME')
+const every = books.every(b => {
+  b.title.includes('The')
+})
+console.log({every})
+
+const some = books.some(b => {
+  b.title.toLowerCase().includes('The')
+})
+console.log({some})
+
+const wrd = ["dog", "log", "hog"];
+const all3Lets = wrd.every(word => word.length === 3);
+
+const isLetterG = wrd.every(word => {
+  const last = word.length - 1;
+  return word[last] === 'g'
+});
+console.log({all3Lets})
+console.log({isLetterG})

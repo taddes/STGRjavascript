@@ -79,5 +79,32 @@ const odds = nums.filter(n => {
 // [9, 7, 5, 3, 1]
 ```
 
+### Every
+* Tests whether *all* elements in an array pass the provided function. Returns a boolean
+
+### Some
+* Tests whether *some* elements in an array pass the provided function. Returns a boolean
+
 ```javascript
+const words = ["dog", "log", "hog"];
+const all3Lets = words.every(word => word.length === 3);
+
+const isLetterG = words.some(word => {
+  const last = word.length - 1;
+  return word[last] === 'g'
+});
 ```
+
+### Sort
+
+* Default sort in JS is to convert all values to strings and sort them based on that.
+* Passing in a *compare function* is what allows you to sort integers and other data types, not just based on strings.
+```javascript
+arr.sort(compareFunc(a, b))
+```
+* If `compareFunc(a, b)` returns less than 0:
+    * Sort a before b
+* If `compareFunc(a, b)` returns 0:
+    * Leave a and b unchanged with respect to each other
+* If `compareFunc(a, b)` returns greater than 0
+    * Sort b before a
