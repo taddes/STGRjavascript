@@ -87,4 +87,6 @@ mult(5) // 5
       });
     }
     ```
-    
+
+### Destructuring
+* A short, clean syntax to unpack values from arrays or properties from objects into distinct variables.
