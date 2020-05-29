@@ -20,7 +20,7 @@ mult(5) // 5
           nums = [25, 45, 33, 85, 48]
           Math.max(nums) // NaN
           Math.max(...nums) // 85
-          ```
+        ```
     * Spread in array literals.
         * Create new array using an existing array(s). Spreads elements from one array into a new array.
         * Can combine multiple arrays, even pass in new values while spreading
@@ -30,7 +30,7 @@ mult(5) // 5
         const spreadArr = [...nums1, ...nums2, 7, 8, 9]
         console.log({spreadArr}) // [1, 2, 3, 4, 5, 6, 7, 8, 9]
         ```
-        * Similar to `array1.concat(array2)`
+        * Similar to array.concat() `array1.concat(array2)`
         ```javascript
         const combArr = nums1.concat(nums2)
         ```
@@ -43,4 +43,9 @@ mult(5) // 5
         [...'abcdef'] // ['a', 'b', 'c', 'd', 'e', 'f']
         ```
     * Spread in object literals.
+        * Ability to spread out objects, unpack them into other objects.
+        ```javascript
+        const feline = { legs: 4, family: "Felidae" };
+        const lion = { ...feline, genus: "Panthera" };
+        ```
 

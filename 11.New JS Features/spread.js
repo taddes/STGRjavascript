@@ -21,16 +21,16 @@ const moreCats = [...allCats, "Cougar"];
 console.log({ moreCats });
 
 // Spread string into an array
-const name = 'albert';
-console.log(name.split(''))
-console.log([...name])
+const name = "albert";
+console.log(name.split(""));
+console.log([...name]);
 
 // Object literal spreading where zero or more key-value pairs are expected
-const feline = { legs: 4, family: 'Felidae'};
-const canine = { family: 'Caninae', furry: true}
+const feline = { legs: 4, family: "Felidae" };
+const canine = { family: "Caninae", furry: true };
 
-const dog = {...canine, isPet: true};
-console.log({dog})
+const dog = { ...canine, isPet: true };
+console.log({ dog });
 
-const lion = {...feline, genus: 'Panthera'}
-console.log({lion})
+const lion = { ...feline, genus: "Panthera" };
+console.log({ lion });
