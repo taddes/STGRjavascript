@@ -90,3 +90,33 @@ mult(5) // 5
 
 ### Destructuring
 * A short, clean syntax to unpack values from arrays or properties from objects into distinct variables.
+* Arrays:
+    * Unpack variables from an array into their own variables
+    ```javascript
+    const raceResults = ['Eliud Kipchoje', 'Feyisa Lelisa', 'Galen Rupp'];
+    const [ gold, silver, bronze ] = raceResults;
+    console.log({gold, silver, bronze}) //'Eliud Kipchoje', 'Feyisa Lelisa', 'Galen Rupp'
+    ```
+    * Using the order of the written variable names within the array sets the index values of the referenced array.
+    * Can use commas to reference empty spaces to 'iterate' though and pass elements.
+    ```javascript
+    const [first, , , fourth] = raceResults;
+    ```
+    * Can use spread operator to combine other values into an array.
+    ```javascript
+    const [winner, ...others] = raceResults;
+    ```
+* Objects:
+    * Variables based off of name of property of an object.
+    ```javascript
+        const runner = {
+          first: "Eliud",
+          last: "Kipchoge",
+          country: "Kenya",
+          title: "Elder of the Order of the Golden Heart of Kenya",
+      };
+
+      const {country: nation, title: honorific } = runner;
+      console.log({nation}) // 'Kenya;
+      console.log({honorific}) // 'Elder of the Order of the Golden Heart of Kenya'
+      ```
