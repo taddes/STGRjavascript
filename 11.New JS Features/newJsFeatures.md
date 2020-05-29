@@ -38,7 +38,7 @@ mult(5) // 5
         ```javascript
         const copy = [...otherArr]
         ```
-        * Good for spreading out a string:
+        * Good for spreading out a string: 
         ```javascript
         [...'abcdef'] // ['a', 'b', 'c', 'd', 'e', 'f']
         ```
