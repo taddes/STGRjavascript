@@ -24,3 +24,6 @@ const {country: nation, title: honorific } = runner;
 
 console.log({nation})
 console.log({honorific})
+
+const {first, last, ...other} = runner;
+console.log(first, last, other)
