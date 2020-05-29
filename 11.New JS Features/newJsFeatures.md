@@ -34,7 +34,7 @@ mult(5) // 5
         ```javascript
         const combArr = nums1.concat(nums2)
         ```
-        * Excellent way to make a copy of an array:
+        * Excellent way to make a copy of an array, *but cannot clone nested arrays*:
         ```javascript
         const copy = [...otherArr]
         ```
@@ -48,4 +48,5 @@ mult(5) // 5
         const feline = { legs: 4, family: "Felidae" };
         const lion = { ...feline, genus: "Panthera" };
         ```
+        * Can be used to copy/clone obejcts *but will not clone nested objects*
 
