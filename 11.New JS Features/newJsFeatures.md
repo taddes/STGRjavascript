@@ -49,4 +49,12 @@ mult(5) // 5
         const lion = { ...feline, genus: "Panthera" };
         ```
         * Can be used to copy/clone obejcts *but will not clone nested objects*
+        ```javascript
+        const houseCat = {
+          ...feline,
+          isUnpredictable: true,
+          stripes: true
+        };
+        ```
 
+### Arguments Object
