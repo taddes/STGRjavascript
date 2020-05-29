@@ -51,3 +51,29 @@ const [{ first: goldWinner }, { country }] = results;
 
 console.log(country);
 console.log(goldWinner);
+
+// Parameter Destructuring
+const fullName = ({first, last}) => {
+  return `${first} ${last}`
+}
+const runnerPerson = {
+  first: "Eliud",
+  last: "Kipchoge",
+  country: "Kenya",
+  title: "Elder of the Order of the Golden Heart of Kenya",
+};
+
+console.log(fullName(runnerPerson))
+
+function printName({ first, last, country }) {
+  return `${first} ${last}, ${country}`
+}
+
+console.log(printName(runnerPerson))
+
+const responses = ['HTTP/1.1', '200 OK', 'application/json']
+function parseResponse([protocol, statusCode, contentType]) {
+  console.log(`Status ${statusCode}`)
+}
+
+parseResponse(responses)

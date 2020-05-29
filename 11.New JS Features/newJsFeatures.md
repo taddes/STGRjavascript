@@ -120,4 +120,32 @@ mult(5) // 5
       console.log({nation}) // 'Kenya;
       console.log({honorific}) // 'Elder of the Order of the Golden Heart of Kenya'
       ```
-  * Nested Destructuring
+    * Nested Destructuring
+        * Reference objects, or pass them with comma, reference array or object elements as you would, were they not nested.
+        ```javascript
+          const results = [
+          {
+            first: "Eliud",
+            last: "Kipchoge",
+            country: "Kenya",
+          },
+          {
+            first: "Feyisa",
+            last: "Lilesa",
+            country: "Ethiopia",
+          },
+          {
+            first: "Galen",
+            last: "Rupp",
+            country: "United States",
+          },
+        ];
+        const [{ first: goldWinner }, { country }] = results;
+        ```
+    * Parameter Destucturing
+        * Passing in an object literal with references to the desired keys as the arguments to pass in.  
+        ```javascript
+        function printName({ first, last, country }) {
+          return `${first} ${last}, ${country}`
+        }
+        ```
