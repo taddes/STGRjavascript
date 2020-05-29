@@ -57,4 +57,6 @@ mult(5) // 5
         };
         ```
 
-### Arguments Object
+### Rest Operator (Arguments Object)
+* Collects multiple objects into a single array.
+* Make functions accept a variable number of arguments. Like `*args` in Python.
