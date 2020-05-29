@@ -120,3 +120,4 @@ mult(5) // 5
       console.log({nation}) // 'Kenya;
       console.log({honorific}) // 'Elder of the Order of the Golden Heart of Kenya'
       ```
+  * Nested Destructuring

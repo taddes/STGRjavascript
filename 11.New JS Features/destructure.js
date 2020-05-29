@@ -20,10 +20,34 @@ const runner = {
   title: "Elder of the Order of the Golden Heart of Kenya",
 };
 
-const {country: nation, title: honorific } = runner;
+const { country: nation, title: honorific } = runner;
 
-console.log({nation})
-console.log({honorific})
+console.log({ nation });
+console.log({ honorific });
 
-const {first, last, ...other} = runner;
-console.log(first, last, other)
+const { first, last, ...other } = runner;
+console.log(other);
+
+// Nested Destructuring
+const results = [
+  {
+    first: "Eliud",
+    last: "Kipchoge",
+    country: "Kenya",
+  },
+  {
+    first: "Feyisa",
+    last: "Lilesa",
+    country: "Ethiopia",
+  },
+  {
+    first: "Galen",
+    last: "Rupp",
+    country: "United States",
+  },
+];
+
+const [{ first: goldWinner }, { country }] = results;
+
+console.log(country);
+console.log(goldWinner);
