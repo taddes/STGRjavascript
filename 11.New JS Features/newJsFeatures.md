@@ -11,4 +11,15 @@ function mult(x, y = 1) {
 mult(5) // 5
 ```
 ### Spread 
-* Allows an iterable such as an array to be **expanded** in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected
+* Allows an iterable such as an array to be **expanded** in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
+* Expanding some iterable into multiple arguments, at its simplest. 
+* 3 Main uses:
+    * Spread in a function Call.
+      Expands an iterable (array, string, etc.) into a list of arguments.
+    * Spread in array literals.
+    * Spread in object literals.
+```javascript
+nums = [25, 45, 33, 85, 48]
+Math.max(nums) // NaN
+Math.max(...nums) // 85
+```
