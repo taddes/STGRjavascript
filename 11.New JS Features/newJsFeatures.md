@@ -67,4 +67,24 @@ mult(5) // 5
     * Contains all arguments passed into function and their index.
     * Again, array methods cannot be used. However, you can convert it to an array using `[...arguments]` or `Array(arguments)`
     * Again, not usable in arrow functions.
+    ```javascript
+    function sum(x, y, z) {
+      argsArr = [...arguments];
+      return argsArr.reduce((total, curVal) => {
+        return total + curVal;
+      });
+    }
+      ```
 
+* **REST PARAMS**:
+    * Collects all remaining arguments (any that have not matched a specific parameter) into an actual array.
+    * Put everything not accounted for into an array. 
+    * Order matters. Must come before any other parameters. **Will always be last param**.
+    ```javascript
+    function sum2(...nums) {
+      return nums.reduce((total, currVal) => {
+        return total + currVal
+      });
+    }
+    ```
+    
