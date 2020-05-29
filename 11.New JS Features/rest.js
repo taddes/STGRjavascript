@@ -1,5 +1,9 @@
 function sum(x, y, z) {
-  console.log(arguments) 
+  console.log(arguments);
+  argsArr = [...arguments];
+  return argsArr.reduce((total, curVal) => {
+    return total + curVal;
+  });
 }
 
-sum(3,4,6)
+console.log(sum(3, 4, 6))

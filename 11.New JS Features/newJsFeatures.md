@@ -60,3 +60,11 @@ mult(5) // 5
 ### Rest Operator (Arguments Object)
 * Collects multiple objects into a single array.
 * Make functions accept a variable number of arguments. Like `*args` in Python.
+
+* **Arguments Object** (Older way):
+    * Iterable available inside every function **Except arrow functions**. under `arguments` keyword.
+    * *array-like* object that has a length property, but does not have array methods like push or pop. 
+    * Contains all arguments passed into function and their index.
+    * Again, array methods cannot be used. However, you can convert it to an array using `[...arguments]` or `Array(arguments)`
+    * Again, not usable in arrow functions.
+
