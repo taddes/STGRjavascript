@@ -5,7 +5,7 @@
 * If a variable is named within an object and you want it to be a key, just set `keyword`, not `keyword: value` like you did in pre-ES5 code.
 
 ### Computed Properties
-* A dynamic value for a key when defining an object. Use `[propertyName]` syntax.
+* A dynamic value for a key when defining an object. Use `[propertyName]` syntax. They won't be a static string as usual, like `keyname`.
 ```javascript
 const team = {};
 team[role] = person;
@@ -31,4 +31,18 @@ const addProp = {obj, k, v} => {
 }
 
 const res = addProp(team, 'happy', ':)')
+```
+
+### Shorthand Method Definition
+```javascript
+const auth = {
+  username: 'Botnik'n
+  login() {
+    console.log('Logged in')
+  }
+  // versus
+  login: function() {
+    console.log('logged out');
+  }
+}
 ```
